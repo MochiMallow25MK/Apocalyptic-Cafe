@@ -12,7 +12,7 @@
 4. Press **Play**. No other setup or imported art is needed - the level is built from Unity primitives when the game starts.
 
 ## Goal
-* **Win:** serve 8 customers.
+* **Win:** serve 10 customers.
 * **Lose:** cafe reputation drops to 0.
 * Reputation goes **up** when you serve customers and **down** when a customer leaves angry or zombies are at the cafe.
 
@@ -49,4 +49,3 @@
 * All code and primitive-shape visuals in this repository are original work by our team.
 * Design framework: Hunicke, LeBlanc, Zubek - *MDA: A Formal Approach to Game Design and Game Research* (2004).
 * Inspiration (ideas only, nothing copied): Overcooked, Cook Serve Delicious, Plants vs. Zombies, Stardew Valley.
-* Any imported assets are listed here with author, license and link: *(none yet)*
