@@ -1,4 +1,4 @@
-# Apocalyptic Cafe  (Midterm Prototype)
+# Apocalyptic Cafe  (Midterm Milestone)
 
 > Run a tiny cafe at the end of the world: farm coffee beans and fruit, serve survivors, and shoot the zombies that scare your customers away.
 

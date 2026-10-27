@@ -12,13 +12,13 @@ public class GameManager : MonoBehaviour
     [Header("Win / lose rules")]
     public int startReputation = 50;
     public int maxReputation = 100;
-    public int customersToWin = 8;
+    public int customersToWin = 10;
 
     [Header("Player carrying")]
     public int carryLimit = 3;
 
     [Header("Reputation changes")]
-    public int reputationPerServe = 8;
+    public int reputationPerServe = 10;
     public int reputationLostAngryCustomer = 10;
 
     public GameState State { get; private set; }
