@@ -1,30 +1,18 @@
 using UnityEngine;
 
-// Flies straight; damages the first zombie it touches.
 public class Bullet : MonoBehaviour
 {
-    public Vector3 dir = Vector3.forward;
-    public float speed = 16f;
-    public float life = 0.9f;
-    public float hitRadius = 1.0f;
-    float t;
+    [HideInInspector] public Vector3 dir;
+    float life = 0.9f;
 
     void Update()
     {
-        transform.position += dir * speed * Time.deltaTime;
-        t += Time.deltaTime;
-        for (int i = Zombie.All.Count - 1; i >= 0; i--)
+        transform.position += dir * 16f * Time.deltaTime;
+        foreach (Zombie z in Zombie.All)
         {
-            Zombie z = Zombie.All[i];
-            Vector3 d = z.transform.position - transform.position;
-            d.y = 0f;
-            if (d.magnitude < hitRadius)
-            {
-                z.Hit(1);
-                Destroy(gameObject);
-                return;
-            }
+            Vector3 d = z.transform.position - transform.position; d.y = 0;
+            if (d.magnitude < 1f) { z.Hit(); Destroy(gameObject); return; }
         }
-        if (t > life) Destroy(gameObject);
+        if ((life -= Time.deltaTime) <= 0) Destroy(gameObject);
     }
 }
