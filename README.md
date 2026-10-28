@@ -6,8 +6,6 @@
 
 **Team:** Mohamed Zouhir Kazan, Nadeen Ahmed, Malak Ahmed, Umar Amin Tolba, Mahmoud Hesham Abdelraheim
 
-**Demo video:** [link to 1-3 minute screen recording]
-
 ## How to run
 1. Install Unity Hub and Unity 6 (2022.3 LTS or newer should also work).
 2. Clone or download this repository.
